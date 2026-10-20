@@ -22,6 +22,11 @@ class WscleanMx < Formula
   head "https://github.com/peijin94/wsclean-mx.git", branch: "main"
   version "0.1.0"
 
+  bottle do
+    root_url "https://github.com/peijin94/wsclean-mx/releases/download/v0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "f6ea5748aa33dc4e5f4f7d0c716c2ffc74c813f83183a237afe82d14d587f787"
+  end
+
   depends_on arch: :arm64
   depends_on macos: :sequoia
   depends_on "cmake" => :build
